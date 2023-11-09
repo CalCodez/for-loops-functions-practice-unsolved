@@ -5,7 +5,11 @@
 
 export function getFirstTenNumbers() {
   // Your code goes here...
+  var arr = [1, 2, 3];
+  var arr2 = [4, 5, 6];
+  var arr3 = arr.concat(arr2) {
 
+  }
 }
 
 // === TEST YOURSELF ===
