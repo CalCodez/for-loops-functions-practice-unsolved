@@ -3,14 +3,16 @@
 // Return an array of numbers in 1..10
 // getFirstTenNumbers() => [1, 2, 3, ... , 10]
 
-export function getFirstTenNumbers() {
-  // Your code goes here...
-  var arr = [1, 2, 3];
-  var arr2 = [4, 5, 6];
-  var arr3 = arr.concat(arr2) {
+// Your code goes here...
+var arr1 = [1, 2, 3, 4, 5];
+var arr2 = [6, 7, 8, 9, 10];
+export function getFirstTenNumbers(arr1, arr2) {
+  for (var i = 0; i < arr1.length;) return arr1.concat(arr2);
 
-  }
+
 }
+
+getFirstTenNumbers(arr1, arr2)
 
 // === TEST YOURSELF ===
 // Once you're finished run the test with "npm run test-1"
