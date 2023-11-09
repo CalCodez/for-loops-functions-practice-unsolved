@@ -4,11 +4,12 @@
 // getFirstTenNumbers() => [1, 2, 3, ... , 10]
 
 // Your code goes here...
-var array1 = [1, 2, 3, 4, 5];
-var array2 = [6, 7, 8, 9, 10];
-var array3 = array1.concat(array2);
+
 
 export function getFirstTenNumbers(arr1, arr2) {
+  var array1 = [1, 2, 3, 4, 5];
+  var array2 = [6, 7, 8, 9, 10];
+  var array3 = array1.concat(array2);
   for (var i = 0; i < array1.length; i++);
   return (array3);
 }
