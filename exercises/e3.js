@@ -43,8 +43,8 @@ export function getStringSum(str) {
   return total;
 }
 
-getStringSum("GH2U87A");
-getStringSum("GHIUJUHSG");
+//getStringSum("GH2U87A");
+//getStringSum("GHIUJUHSG");
 
 
 
