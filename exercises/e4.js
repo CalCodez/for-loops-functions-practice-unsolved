@@ -4,6 +4,7 @@
 // findMaxValueInArray([2, 45, 32, 3, 0, 46, 12]) => 46
 
 export function findMinValueInArray(array) {
+  var array = [20, 24, 26, 19];
   let min = array[0];
   let max = array[0];
 
@@ -14,11 +15,12 @@ export function findMinValueInArray(array) {
       max = array[i];
     }
   }
-  return { min };
+  return min;
 };
 
 
 export function findMaxValueInArray(array) {
+  var array = [20, 24, 26, 19];
   let min = array[0];
   let max = array[0];
 
@@ -29,8 +31,9 @@ export function findMaxValueInArray(array) {
       max = array[i];
     }
   }
-  return { max };
+  return max;
 };
+
 
 // === TEST YOURSELF ===
 // Once you're finished run the test with "npm run test-4"
