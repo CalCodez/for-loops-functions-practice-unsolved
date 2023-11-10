@@ -30,15 +30,21 @@ getAverage(arr);
  * Example2: getStringSum("GHIUJUHSG") => 0
  * */
 
-export function getStringSum(str) {
-  // Your code goes here...
+// Your code goes here...
 
-  var sum = 0;
-  for (var i = 0; i < str.length; i++) {
-    sum += arr[i];
+export function getStringSum(str) {
+  let total = 0;
+  for (let i = 0; i < str.length; i++) {
+    if (!isNaN(parseInt(str[i]))) {
+      total += parseInt(str[i]);
+    }
+
   }
-  return sum = str.length;
+  return total;
 }
+
+getStringSum("GH2U87A");
+getStringSum("GHIUJUHSG");
 
 
 
