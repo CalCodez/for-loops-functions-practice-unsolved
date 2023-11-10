@@ -13,7 +13,7 @@ export function getFirstTenNumbers(arr1, arr2) {
   for (var i = 0; i < array1.length; i++);
   return (array3);
 }
-getFirstTenNumbers()
+getFirstTenNumbers();
 
 
 // === TEST YOURSELF ===
