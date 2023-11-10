@@ -12,7 +12,7 @@ export function getNumbersWithSquareRoots(max) {
   }
   return arr;
 }
-getNumbersWithSquareRoots(17)
+//getNumbersWithSquareRoots(17)
 
 
 // === TEST YOURSELF ===
