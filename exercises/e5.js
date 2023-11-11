@@ -5,7 +5,7 @@
 // getAllClientNames(bankAccounts) => ['Kevin', 'Spenser']
 
 export function getAllClientNames(array) {
-  // Your code goes here...
+  return this.bankAccounts.name;
 
 }
 
