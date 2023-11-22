@@ -5,9 +5,10 @@
 
 import { bankAccountsNoPositiveBalance } from "../data/data";
 
+
 export function getClientWithNoMoney(array) {
   for (var i = 0; i < bankAccountsNoPositiveBalance.length; i++) {
-    if (bankAccountsNoPositiveBalance[i].balance == 0) return (bankAccountsNoPositiveBalance[i].name);
+    if (bankAccountsNoPositiveBalance[i].balance == 0) return [(bankAccountsNoPositiveBalance[i].name)];
   }
 };
 
