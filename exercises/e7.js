@@ -9,7 +9,7 @@ import { bankAccounts } from "../data/data";
 export function getClientWithLeastPositiveBalance(array) {
   for (var i = 0; i < bankAccounts.length; i++) {
     if (bankAccounts[i].balance > 0 && bankAccounts[i].balance < 19) return [bankAccounts[i]]; {
-      if (bankAccounts[i].balance < +0) return [];
+      if (bankAccounts[i].balance < 0) return [];
     }
   }
 
