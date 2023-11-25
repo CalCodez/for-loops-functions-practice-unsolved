@@ -7,19 +7,20 @@
 import { bankAccounts, bankAccountsNoPositiveBalance } from "../data/data";
 
 export function getClientWithLeastPositiveBalance(array) {
-  for (var i = 0; i < bankAccounts.length; i++) {
-    if (bankAccounts[i].balance > 0 && bankAccounts[i].balance < 19) return [bankAccounts[i]]; {
+  let lowestBalance = null;
+  const customerWithLowestBalance = [];
+
+  for (let i = 0; i < array.length; i++) {
+    if (array[i].balance > 0 && (lowestBalance === null || array[i].balance < lowestBalance.balance)) {
+      lowestBalance = array[i];
     }
-  };
-
-  for (var n = 0; n < bankAccountsNoPositiveBalance.length; n++) {
-    if (bankAccountsNoPositiveBalance[n].balance > 0) return [bankAccountsNoPositiveBalance[n]];
   }
-  return [];
 
-
+  if (lowestBalance !== null) {
+    customerWithLowestBalance.push(lowestBalance);
+  }
+  return customerWithLowestBalance;
 }
-
 
 
 
