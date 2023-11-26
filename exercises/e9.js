@@ -5,10 +5,21 @@
 // getClientsWithBalanceOverOneHundred(array) => [{ name: 'Name1', balance: 32, ... }, { name: 'Name2', balance: 3523, ... }]
 
 export function getClientsWithBalanceOverOneHundred(array) {
-  // Your code goes here...
+  let lowestAllowBalance = 100;
+  let higestAllowBalance = 18456.57;
+  let clientLowHight = [higestAllowBalance, lowestAllowBalance];
+  const clientsOverOneHundred = [];
+
+  for (let i = 0; i < array.length; i++) {
+    if (array[i].balance > 0 && (lowestAllowBalance.balance == 100 && higestAllowBalance.balance == 18456.57 || array[i].balance >= lowestAllowBalance.balance && higestAllowBalance.balance)) {
+      clientLowHight.blance = array[i];
+    }
+    if (lowestAllowBalance.balance > 100 && higestAllowBalance.balance == 18456.57);
+    clientsOverOneHundred.push(clientLowHight[i]);
+  }
+  return clientsOverOneHundred;
 
 }
-
 
 
 // === TEST YOURSELF ===
