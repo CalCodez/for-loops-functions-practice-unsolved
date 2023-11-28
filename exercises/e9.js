@@ -12,7 +12,7 @@ export function getClientsWithBalanceOverOneHundred(array) {
     if (array[i] > 0 && (lowestAllowBalance === 100.00 || array[i].balance > lowestAllowBalance.balance)) {
       lowestAllowBalance = array[i];
     }
-    if (lowestAllowBalance.balance >= 100.00)
+    if (lowestAllowBalance[i].balance >= 100.00)
       clientsOverOneHundred.push(lowestAllowBalance)
   }
   return clientsOverOneHundred;
