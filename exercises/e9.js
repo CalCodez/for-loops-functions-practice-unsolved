@@ -1,23 +1,21 @@
 
 // EXERCISE 9
-// Return an array of bank accounts with balance over $100i
+// Return an array of bank accounts with balance over $100
 // Array example: bankAccounts in /data/data.js
 // getClientsWithBalanceOverOneHundred(array) => [{ name: 'Name1', balance: 32, ... }, { name: 'Name2', balance: 3523, ... }]
 
 export function getClientsWithBalanceOverOneHundred(array) {
-  let lowestAllowBalance = 100.00;
-  const clientsOverOneHundred = [];
+  let minAllowance = 100;
+  const clientsOverOnehundred = [];
 
   for (let i = 0; i < array.length; i++) {
-    if (array[i] > 0 && (lowestAllowBalance === 100.00 || array[i].balance > lowestAllowBalance.balance)) {
-      lowestAllowBalance = array[i];
-    }
-    if (lowestAllowBalance[i].balance >= 100.00)
-      clientsOverOneHundred.push(lowestAllowBalance)
+    if (array[i].balance > minAllowance) return clientsOverOnehundred.push(minAllowance[i]);
+  } minAllowance = array[i].balance;
+  clientsOverOnehundred.push(minAllowance[i]); {
   }
-  return clientsOverOneHundred;
-
+  return clientsOverOnehundred;
 }
+
 
 
 // === TEST YOURSELF ===
