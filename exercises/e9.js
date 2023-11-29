@@ -6,15 +6,22 @@
 
 export function getClientsWithBalanceOverOneHundred(array) {
   let minAllowance = 100;
+  let minClientBal = 100.32
   const clientsOverOnehundred = [];
 
   for (let i = 0; i < array.length; i++) {
-    if (array[i].balance > minAllowance) return clientsOverOnehundred.push(minAllowance[i]);
-  } minAllowance = array[i].balance;
-  clientsOverOnehundred.push(minAllowance[i]); {
+    if (array[i].balance > 0 && (minAllowance < minClientBal.balance)) {
+      minClientBal.balance = array[i];
+    } {
+      if (array[i].balance > minClientBal.balance)
+        clientsOverOnehundred.push(minClientBal);
+    }
   }
   return clientsOverOnehundred;
+
 }
+console.log(minAllowance)
+
 
 
 
