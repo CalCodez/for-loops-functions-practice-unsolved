@@ -4,9 +4,23 @@
 // getClientsWithLetterInName(bankAccounts, 'e') => ['Kevin', 'Steven', ...]
 
 export function getClientsWithLetterInName(array, letter) {
-  // Your code goes here...
+  let hasAccount = true;
+  let letterOne = 'a';
+  let letterTwo = 'c';
+  const nameToSort = [];
+  const clientsWithLetter = [];
 
+  for (let i = 0; i < array.length; i++) {
+    if (array[i] = hasAccount) return nameToSort.push(array[i].name)
+  }
+
+  for (let l = 0; l < nameToSort.length; l++) {
+    if (nameToSort[l] == letterOne || nameToSort[l] == letterTwo)
+      clientsWithLetter.push(nameToSort[l]);
+  }
+  return clientsWithLetter;
 }
+
 
 // === TEST YOURSELF ===
 // Once you're finished run the test with "npm run test-10"
