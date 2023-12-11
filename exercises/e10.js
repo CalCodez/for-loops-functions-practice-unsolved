@@ -10,9 +10,9 @@ export function getClientsWithLetterInName(array, letter) {
 
   for (let i = 0; i < array.length; i++) {
     if (array[i].name.includes(letterOne))
-      clientsWithLetter.push(array[i].name);
+      clientsWithLetter.push(array[i].name); {
+    }
   }
-
   return clientsWithLetter;
 }
 
