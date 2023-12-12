@@ -8,12 +8,14 @@ export function getClientsWithLetterInName(array, letter) {
   let letterTwo = 'c';
   const clientsWithLetter = [];
 
-  for (let i = 0; i < array.length; i++) {
-    if (array[i].name.includes(letterOne))
-      clientsWithLetter.push(array[i].name); {
+  for (let i = 0; i < array.length; i++)
+    for (let l = 0; l < array[i].name.length; l++) {
+      if (array[i].name[l] == letterOne || (array[i].name[l] == letterTwo))
+        clientsWithLetter.push(array[i].name);
     }
-  }
+
   return clientsWithLetter;
+
 }
 
 
