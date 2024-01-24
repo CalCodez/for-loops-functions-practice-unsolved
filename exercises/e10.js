@@ -9,10 +9,10 @@ export function getClientsWithLetterInName(array, letter) {
   const clientsWithLetter = [];
 
   for (let i = 0; i < array.length; i++)
-    for (let l = 0; l < array[i].name.length; l++) {
-      if (array[i].name[l] == letterOne || (array[i].name[l] == letterTwo))
+    for (let letter = 0; letter < array[i].name.length; letter++) {
+      if (array[i].name[letter] == letterOne && (array[i].name[letter] === letterTwo.toUpperCase()))
         clientsWithLetter.push(array[i].name);
-    }
+    };
 
   return clientsWithLetter;
 
