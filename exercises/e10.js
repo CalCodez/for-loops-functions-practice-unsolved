@@ -7,15 +7,15 @@ export function getClientsWithLetterInName(array, letter) {
   let letterOne = 'a';
   let letterTwo = 'C';
 
-  const clientsWithLetter = [];
-  const clientsWithLetterC = [];
+  const clientsWithLetter = [[], []];
 
 
   for (let i = 0; i < array.length; i++)
-    for (let letter = 0; letter < array[i].name.length; letter++) {
-      if (array[i].name[letter] == letterOne)
-        clientsWithLetter.push(array[i].name);
-    };
+    for (let x = 0; x < array[i].name.length; x++)
+      if (array[i].name[x] == letterOne) {
+        clientsWithLetter[0].push(array[i].name);
+      } else (array[i].name[x] === letterTwo)
+  clientsWithLetter[1].push(array[i].name);
 
 
 
@@ -23,7 +23,19 @@ export function getClientsWithLetterInName(array, letter) {
   return clientsWithLetter;
 
 
+
+
+
+
+
 }
+
+
+
+
+
+
+
 
 
 
