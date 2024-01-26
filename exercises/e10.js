@@ -15,13 +15,17 @@ export function getClientsWithLetterInName(array, letter) {
     for (let letter = 0; letter < array[i].name.length; letter++) {
       if (array[i].name[letter] == letterOne)
         clientsWithLetter.push(array[i].name);
-      else (array[i].name[letter] !== letterTwo.toUpperCase())
-      //clientsWithLetterC.push(array[i].name);
+    };
 
-    }
+
+
+
   return clientsWithLetter;
 
+
 }
+
+
 
 
 // === TEST YOURSELF ===
