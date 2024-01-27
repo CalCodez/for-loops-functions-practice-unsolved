@@ -12,6 +12,8 @@ export function getClientsWithLetterInName(array, letter) {
     for (let x = 0; x < array[i].name.length; x++) {
       if (array[i].name[x] == letter[0])
         clientsWithLetter.push(array[i].name)
+      if (array[i].name[x] === letter[1])
+        clientsWithLetter.push(array[i].name)
     }
   return clientsWithLetter;
 }
