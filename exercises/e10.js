@@ -5,30 +5,26 @@
 
 export function getClientsWithLetterInName(array, letter) {
   let letterOne = 'a';
-  let letterTwo = 'C';
+  let clientsWithLetter = [];
+  let clientsWithLetterC = [];
 
-  const clientsWithLetter = [[], []];
-
-
-  for (let i = 0; i < array.length; i++)
-    for (let x = 0; x < array[i].name.length; x++)
-      if (array[i].name[x] == letterOne) {
-        clientsWithLetter[0].push(array[i].name);
-      } else (array[i].name[x] === letterTwo)
-  clientsWithLetter[1].push(array[i].name);
-
-
-
-
+  for (let i = 0; 0 < array.length; i++)
+    for (let x = 0; array[i].name.length; x++) {
+      if (array[i].name[x] == letterOne)
+        clientsWithLetter.push(array[i].name)
+    }
   return clientsWithLetter;
-
-
-
-
-
-
-
 }
+
+
+
+
+
+
+
+
+
+
 
 
 
