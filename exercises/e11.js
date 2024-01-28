@@ -5,17 +5,8 @@
 // getAllWithdrawals(bankAccounts) => [3432, 0, 43242.34, 0, 23432]
 
 export function getAllWithdrawals(array) {
-  let noWd = null;
-  let minWd = 0;
-  const withDrawls = [];
 
-  for (i in array)
-    for (let i = 0; i < array.length; i++) {
-      if (array[i].withDrawls == noWd) (array[i].wi = minWd)
 
-    }
-
-  return withDrawls;
 }
 
 // === TEST YOURSELF ===
