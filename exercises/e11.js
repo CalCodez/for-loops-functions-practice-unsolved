@@ -5,8 +5,18 @@
 // getAllWithdrawals(bankAccounts) => [3432, 0, 43242.34, 0, 23432]
 
 export function getAllWithdrawals(array) {
+  const cusDeposits = [];
+  let noDeposits = null;
 
 
+  for (let i = 0; i < array.length; i++) {
+    let sum = 0;
+    for (let x = 0; x < array[i].length; x++) {
+      sum += array[i].deposits[x];
+    } if (!isNaN(sum))
+      cusDeposits[cusDeposits.length] = sum;
+  }
+  return cusDeposits;
 }
 
 // === TEST YOURSELF ===
