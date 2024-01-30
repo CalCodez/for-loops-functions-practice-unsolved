@@ -6,7 +6,7 @@
 
 export function getAllWithdrawals(array) {
   const cusDeposits = [];
-  let noDeposits = null;
+  let noDeposits = NaN;
 
 
   for (let i = 0; i < array.length; i++) {
@@ -14,7 +14,7 @@ export function getAllWithdrawals(array) {
     for (let x = 0; x < array[i].length; x++) {
       sum += array[i].deposits[x];
     } if (!isNaN(sum))
-      cusDeposits[cusDeposits.length] = sum;
+      cusDeposits.push(sum);
   }
   return cusDeposits;
 }
