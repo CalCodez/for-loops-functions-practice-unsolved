@@ -5,19 +5,24 @@
 // getAllWithdrawals(bankAccounts) => [3432, 0, 43242.34, 0, 23432]
 
 export function getAllWithdrawals(array) {
-  const cusDeposits = [];
-  let noDeposits = NaN;
-
-
+  const sums = [];
   for (let i = 0; i < array.length; i++) {
-    let sum = 0;
-    for (let x = 0; x < array[i].length; x++) {
-      sum += array[i].deposits[x];
-    } if (!isNaN(sum))
-      cusDeposits.push(sum);
+    const customer = array[i];
+    let withdrawalSum = 0;
+
+    if (customer.withdrawals && customer.withdrawals.length > 0) {
+      for (let x = 0; x < customer.withdrawals.length; x++) {
+        withdrawalSum += customer.withdrawals[x];
+      }
+    }
+    else {
+      withdrawalSum = 0;
+    }
+    sums.push(withdrawalSum);
   }
-  return cusDeposits;
+  return sums;
 }
+
 
 // === TEST YOURSELF ===
 // Once you're finished run the test with "npm run test-11"
