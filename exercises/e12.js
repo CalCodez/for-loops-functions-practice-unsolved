@@ -7,10 +7,17 @@
 export function getAllDepositsGreaterThanOneHundred(array) {
   // Your code goes here...
 
+  let minDepo = 100;
+  const depos = [];
 
+  for (let i = 0; i < array.length; i++)
+    for (let x = 0; x < array[i].deposits.length; x++) {
+      if (array[i].deposits[x] > minDepo)
+        depos.push(array[i].deposits[x])
+    }
+
+  return depos;
 }
-
-
 
 // === TEST YOURSELF ===
 // Once you're finished run the test with "npm run test-12"
