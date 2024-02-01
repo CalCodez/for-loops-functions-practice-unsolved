@@ -4,21 +4,24 @@
 // Array example: bankAccounts in /data/data.js
 // getAllDepositsGreaterThanOneHundred(bankAccounts) => [3432, 43242.34, 23432]
 
+import { bankAccounts } from "../data/data";
+
 export function getAllDepositsGreaterThanOneHundred(array) {
   // Your code goes here...
 
   const cusDeposits = [];
 
-  for (let i = 0; i < array.length; i++)
-    for (let x = 0; x < array[i].deposits.length; x++)
-      if (array[i].deposits[x] > 100) {
-        cusDeposits.push(array[i].deposits[x])
+  for (let i = 0; i < bankAccounts.length; i++) {
+    for (let x = 0; x < bankAccounts[i].deposits.length; x++)
+      if (bankAccounts[i].deposits[x] >= 100) {
+        cusDeposits.push(bankAccounts[i].deposits[x])
+
       }
 
-  return cusDeposits;
+    return cusDeposits;
+  }
+
 }
-
-
 // === TEST YOURSELF ===
 // Once you're finished run the test with "npm run test-12"
 // If the test has all tests passed, switch to the next exercise file
