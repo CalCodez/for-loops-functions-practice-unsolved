@@ -7,20 +7,15 @@
 import { bankAccounts } from "../data/data";
 
 export function getAllDepositsGreaterThanOneHundred(array) {
-  // Your code goes here...
-
-  const cusDeposits = [];
-
-  for (let i = 0; i < bankAccounts.length; i++) {
-    for (let x = 0; x < bankAccounts[i].deposits.length; x++)
-      if (bankAccounts[i].deposits[x] >= 100) {
-        cusDeposits.push(bankAccounts[i].deposits[x])
-
+  let depos = [];
+  for (let i = 0; i < array.length; i++) {
+    for (let j = 0; j < array[i].deposits.length; j++) {
+      if (array[i].deposits[j] > 100) {
+        depos.push(customers[i].deposits[j]);
       }
-
-    return cusDeposits;
+    }
   }
-
+  return depos;
 }
 // === TEST YOURSELF ===
 // Once you're finished run the test with "npm run test-12"
