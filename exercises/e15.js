@@ -6,7 +6,14 @@
 
 export function concatArrays(arr1, arr2) {
   // Your code goes here...
+  const arr3 = [];
 
+  for (let i = 0; i < arr1.length; i++)
+    for (let x = 0; x < arr2.length; x++) {
+      if (arr1[i] >= 1 && arr2[x] >= 3)
+        arr3.push(arr1[i++], arr2[x])
+    }
+  return arr3.sort();
 }
 
 
