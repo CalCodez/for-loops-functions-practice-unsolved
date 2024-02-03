@@ -17,12 +17,13 @@ export function getAllAccountsWithSumsOfDepositsLess2000(array) {
       }
     }
     if (depositSum > 2000) {
-      sums.pop();
+
     }
     else {
-      depositSum = customer.deposits;
+      if (depositSum < 2000)
+        sums.push(customer)
     }
-    sums.push((customer))
+
   }
   return sums;
 
