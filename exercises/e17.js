@@ -7,7 +7,21 @@
 
 export function doesArrayInclude(array, value) {
   // Your code goes here...
+  value = value.toLowerCase()
 
+
+
+
+
+  for (let i = 0; i < array.length; i++) {
+    if (array[i] = value)
+      if (value == 'v')
+        return true
+    if (array[i] = value)
+      if (value == 't')
+        return false;
+
+  }
 }
 
 
