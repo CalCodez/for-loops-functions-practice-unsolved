@@ -7,7 +7,32 @@
 
 export function separateNamesWithAFromRest(array) {
   // Your code goes here...
+  const newArr = [[], []];
 
+  for (let i = 0; i < array.length; i++) {
+    let group = array[i];
+    let hasA = false;
+    for (let x = 0; x < group.length; x++) {
+      if (group[x] == 'a') {
+        hasA = true;
+
+      }
+    }
+    if (hasA) {
+      newArr[0].push(group);
+    } else {
+      newArr[1].push(group);
+    }
+  }
+
+
+
+
+
+
+
+
+  return newArr;
 }
 
 
