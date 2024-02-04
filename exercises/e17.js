@@ -10,9 +10,6 @@ export function doesArrayInclude(array, value) {
   value = value.toLowerCase()
 
 
-
-
-
   for (let i = 0; i < array.length; i++) {
     if (array[i] = value)
       if (value == 'v')
