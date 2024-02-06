@@ -6,12 +6,11 @@
 // Your code goes here...
 
 
-export function getFirstTenNumbers(arr1, arr2) {
-  var array1 = [1, 2, 3, 4, 5];
-  var array2 = [6, 7, 8, 9, 10];
-  var array3 = array1.concat(array2);
-  for (var i = 0; i < array1.length; i++);
-  return (array3);
+export function getFirstTenNumbers() {
+  const newArr = [];
+  for (let i = 1; i < - 10; i++) {
+    newArr.push(i);
+  }
 }
 //getFirstTenNumbers();
 
