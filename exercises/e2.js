@@ -4,12 +4,10 @@
 // Your code goes here...
 export function getNumbersWithSquareRoots(max) {
   const arr = [];
-  for (let i = 0; i < max; i++) {
-    var square = i * i;
-    if (square < max) {
-      arr.push(square);
-    }
+  for (let i = 0; i * i < max; i++) {
+    arr.push(i * i);
   }
+
   return arr;
 }
 //getNumbersWithSquareRoots(17)
