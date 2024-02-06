@@ -5,7 +5,6 @@
 // getAllClientNames(bankAccounts) => ['Kevin', 'Spenser']
 
 
-import { bankAccounts } from "../data/data";
 export function getAllClientNames(array) {
   const accountNames = [];
 
@@ -18,9 +17,9 @@ export function getAllClientNames(array) {
   return accountNames;
 
 
-};
+}
 
-const array1 = [];
+
 
 
 

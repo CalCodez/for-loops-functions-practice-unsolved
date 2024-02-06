@@ -11,14 +11,10 @@ export function doesArrayInclude(array, value) {
 
 
   for (let i = 0; i < array.length; i++) {
-    if (array[i] = value)
-      if (value == 'v')
-        return true
-    if (array[i] = value)
-      if (value == 't')
-        return false;
+    if (array[i] === value) return true;
 
   }
+  return false;
 }
 
 

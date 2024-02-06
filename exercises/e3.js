@@ -8,13 +8,11 @@
  * Example: getAverage([22, 45, 4, 65]) => 34
  * */
 
-
 // Your code goes here...
-
 
 export function getAverage(array) {
 
-  var sum = 0;
+  let sum = 0;
   for (var i = 0; i < array.length; i++) {
     sum += array[i];
   }
@@ -35,7 +33,7 @@ getAverage(arr);
 export function getStringSum(str) {
   let total = 0;
   for (let i = 0; i < str.length; i++) {
-    if (!isNaN(parseInt(str[i]))) {
+    if (parseInt(str[i])) {
       total += parseInt(str[i]);
     }
 

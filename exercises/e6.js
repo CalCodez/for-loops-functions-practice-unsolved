@@ -3,16 +3,13 @@
 // Array example: bankAccounts in /data/data.js
 // getClientWithNoMoney(bankAccounts) => ['Kevin', 'Jon']
 
-import { bankAccountsNoPositiveBalance } from "../data/data";
-
-
 export function getClientWithNoMoney(array) {
   const cusBalZero = [];
 
   for (let i = 0; i < array.length; i++) {
-    let customer = array[i];
-    if (customer.balance == 0)
-      cusBalZero.push(customer.name)
+    if (array[i].balance == 0)
+      cusBalZero.push(array[i].name);
+
   }
   return cusBalZero;
 

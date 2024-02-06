@@ -4,7 +4,6 @@
 // Array example: bankAccounts in /data/data.js
 // getClientWithLeastBalance(bankAccounts) => [{ name: 'SomeName', balance: 32, ... }]
 
-import { bankAccounts, bankAccountsNoPositiveBalance } from "../data/data";
 
 export function getClientWithLeastPositiveBalance(array) {
   let lowestBalance = null;
